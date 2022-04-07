@@ -1,0 +1,937 @@
+PSIBLAST 2.10.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniref50_swissprotprot.fasta
+           185,110 sequences; 73,243,730 total letters
+
+Results from round 1
+
+
+Query= sp|Q9AXI0
+
+Length=176
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+UniRef50_C3S7F0 Oleosin S1-2 n=24 Tax=Pentapetalae TaxID=1437201 ...  142        2e-42
+UniRef50_Q39165 Oleosin 21.2 kDa n=57 Tax=Brassicaceae TaxID=3700...  132        1e-38
+UniRef50_P29529 Oleosin (Fragment) n=16 Tax=Pentapetalae TaxID=14...  124        8e-36
+UniRef50_P29528 Oleosin 16.4 kDa n=111 Tax=cellular organisms Tax...  108        1e-29
+UniRef50_P29531 P24 oleosin isoform B n=17 Tax=NPAAA clade TaxID=...  104        1e-27
+UniRef50_P21641 Oleosin Zm-II n=29 Tax=Poaceae TaxID=4479 RepID=O...  84.0       8e-20
+UniRef50_Q43284 Oleosin 14.9 kDa n=26 Tax=rosids TaxID=71275 RepI...  75.5       5e-17
+UniRef50_P13436 Oleosin Zm-I n=33 Tax=Mesangiospermae TaxID=14371...  74.7       1e-16
+UniRef50_Q43804 Oleosin 1 n=67 Tax=Mesangiospermae TaxID=1437183 ...  66.2       2e-13
+UniRef50_P29525 Oleosin 18.5 kDa n=50 Tax=Brassicaceae TaxID=3700...  65.9       5e-13
+UniRef50_Q9LY09 Oleosin GRP-17 n=21 Tax=rosids TaxID=71275 RepID=...  46.2       2e-05
+UniRef50_P29526 Oleosin-B2 (Fragment) n=13 Tax=Brassiceae TaxID=9...  43.9       5e-05
+UniRef50_Q43402 Oleosin-B6 n=2 Tax=Brassica TaxID=3705 RepID=OLNB...  43.9       9e-05
+
+
+>UniRef50_C3S7F0 Oleosin S1-2 n=24 Tax=Pentapetalae TaxID=1437201 
+RepID=OLES1_BRANA
+Length=193
+
+ Score = 142 bits (357),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 89/167 (53%), Positives = 117/167 (70%), Gaps = 13/167 (8%)
+
+Query  10   HQVQVHTPTTQRVDVQRRGYDVSGGGVKTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGL  69
+            HQVQVH P  Q             GG+K   P  GPS++Q++AV+ GVP GGTLL L+GL
+Sbjct  9    HQVQVH-PLRQH-----------EGGIKVVYPQSGPSSTQVLAVVAGVPVGGTLLTLAGL  56
+
+Query  70   SLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQ  129
+            +L  ++IGL +A P+F  FSPVIVPA   IGLA+ G + +GA GLTGL S+SW++N IR+
+Sbjct  57   TLAVSVIGLILAFPLFLIFSPVIVPAAFVIGLAMTGFMASGAIGLTGLSSMSWVLNHIRR  116
+
+Query  130  VHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQDVKRSSS  176
+            V    +PD+LD AK+R+ADMA+Y GQ+TKDAGQ I+ KA DV+ S +
+Sbjct  117  VR-ERIPDELDEAKQRLADMAEYAGQRTKDAGQTIEDKAHDVRESKT  162
+
+
+>UniRef50_Q39165 Oleosin 21.2 kDa n=57 Tax=Brassicaceae TaxID=3700 
+RepID=OLEO2_ARATH
+Length=199
+
+ Score = 132 bits (333),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 76/137 (55%), Positives = 105/137 (77%), Gaps = 1/137 (1%)
+
+Query  37   KTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAV  96
+            K+ +P+ GPS++Q++++L+GVP  G+LL L+GL L G++IGL +A P+F  FSPVIVPA 
+Sbjct  41   KSMMPESGPSSTQVLSLLIGVPVVGSLLALAGLLLAGSVIGLMVALPLFLLFSPVIVPAA  100
+
+Query  97   VTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQK  156
+            +TIGLA+ G L +G  GLTGL S+SW++N++R     TVP+QL+ AKRRMAD   Y GQK
+Sbjct  101  LTIGLAMTGFLASGMFGLTGLSSISWVMNYLRGTR-RTVPEQLEYAKRRMADAVGYAGQK  159
+
+Query  157  TKDAGQEIQTKAQDVKR  173
+             K+ GQ +Q KAQDVK+
+Sbjct  160  GKEMGQHVQNKAQDVKQ  176
+
+
+>UniRef50_P29529 Oleosin (Fragment) n=16 Tax=Pentapetalae TaxID=1437201 
+RepID=OLEO_HELAN
+Length=181
+
+ Score = 124 bits (312),  Expect = 8e-36, Method: Composition-based stats.
+ Identities = 68/126 (54%), Positives = 93/126 (74%), Gaps = 1/126 (1%)
+
+Query  46   STSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIG  105
+            STS+ +A++  +P GG LL L+ L+ +GT+IGLA+ATP+F  FSP+IVPAV+TIGLAV G
+Sbjct  32   STSRTLAIIALLPVGGILLGLAALTFIGTLIGLALATPLFVIFSPIIVPAVLTIGLAVTG  91
+
+Query  106  ILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQ  165
+             L +G  GLTGL SLS++ N +RQ  G +VP+ LD  K  + D  +Y GQKTKD GQ+IQ
+Sbjct  92   FLASGTFGLTGLSSLSYLFNMVRQTAG-SVPESLDYVKGTLQDAGEYAGQKTKDFGQKIQ  150
+
+Query  166  TKAQDV  171
+            + A ++
+Sbjct  151  STAHEM  156
+
+
+>UniRef50_P29528 Oleosin 16.4 kDa n=111 Tax=cellular organisms 
+TaxID=131567 RepID=OLEO7_GOSHI
+Length=154
+
+ Score = 108 bits (269),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 73/131 (56%), Positives = 94/131 (72%), Gaps = 1/131 (1%)
+
+Query  44   GPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAV  103
+            GPST+Q++ VL  +P GGTLL L+GL+L GT+IGL +ATP+F  FSPV+VPA + + +AV
+Sbjct  25   GPSTTQVLTVLTLLPIGGTLLALAGLTLTGTVIGLCMATPLFVIFSPVLVPAAIAVFMAV  84
+
+Query  104  IGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQE  163
+             G L++GA GLTGL SLS++ N  RQ  GT   D  D AKR M DM  YVGQKTK+ GQ 
+Sbjct  85   AGFLSSGAFGLTGLSSLSYVFNRFRQATGTEQLDA-DRAKRGMQDMVGYVGQKTKETGQT  143
+
+Query  164  IQTKAQDVKRS  174
+            I+ KA +  R+
+Sbjct  144  IENKAHEGGRT  154
+
+
+>UniRef50_P29531 P24 oleosin isoform B n=17 Tax=NPAAA clade TaxID=2231382 
+RepID=OLEO2_SOYBN
+Length=223
+
+ Score = 104 bits (260),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 83/181 (46%), Positives = 109/181 (60%), Gaps = 16/181 (9%)
+
+Query  5    TDRAPHQVQVHTPTTQRVDV-----QRRGYDVSGGGVKT----FLPDRGPSTSQIIAVLV  55
+            T   PH VQVHT TT R +       R        G+K     +  +RGP+TSQ++AV+ 
+Sbjct  2    TTVPPHSVQVHT-TTHRYEAGVVPPARFEAPRYEAGIKAPSSIYHSERGPTTSQVLAVVA  60
+
+Query  56   GVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLT  115
+            G+P GG LLLL+GL+L GT+ GL +ATP+F  FSPV++PA V IGLAV G LT+G  GLT
+Sbjct  61   GLPVGGILLLLAGLTLAGTLTGLVVATPLFIIFSPVLIPATVAIGLAVAGFLTSGVFGLT  120
+
+Query  116  GLMSLSWMINFIRQVHGTT------VPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQ  169
+             L S SW++N+IR+    +          L  A   +      VGQKTK+ GQ+IQ+KAQ
+Sbjct  121  ALSSFSWILNYIRETQPASENLAAAAKHHLAEAAEYVGQKTKEVGQKTKEVGQDIQSKAQ  180
+
+Query  170  D  170
+            D
+Sbjct  181  D  181
+
+
+>UniRef50_P21641 Oleosin Zm-II n=29 Tax=Poaceae TaxID=4479 RepID=OLEO3_MAIZE
+Length=187
+
+ Score = 84.0 bits (206),  Expect = 8e-20, Method: Composition-based stats.
+ Identities = 70/134 (52%), Positives = 91/134 (68%), Gaps = 1/134 (1%)
+
+Query  37   KTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAV  96
+            K  L D+GP+ SQ + V    P GG LL+LSGL+L  +++GLA+ATPVF  FSPV+VPA 
+Sbjct  36   KGMLHDKGPTASQALTVATLFPLGGLLLVLSGLALTASVVGLAVATPVFLIFSPVLVPAA  95
+
+Query  97   VTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQK  156
+            + IG AV+G LT+GA GL GL SL+ + N  RQ    T PD ++ A+RRMA+ A   G K
+Sbjct  96   LLIGTAVMGFLTSGALGLGGLSSLTCLANTARQAFQRT-PDYVEEARRRMAEAAAQAGHK  154
+
+Query  157  TKDAGQEIQTKAQD  170
+            T  AGQ IQ +AQ+
+Sbjct  155  TAQAGQAIQGRAQE  168
+
+
+>UniRef50_Q43284 Oleosin 14.9 kDa n=26 Tax=rosids TaxID=71275 
+RepID=OLEO3_ARATH
+Length=141
+
+ Score = 75.5 bits (184),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 46/127 (36%), Positives = 72/127 (57%), Gaps = 8/127 (6%)
+
+Query  45   PSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVI  104
+            P   Q++     V  GG+LL+LSGL+L GT+I L +ATP+   FSPV+VPAVVT+ L + 
+Sbjct  22   PKARQMVKAATAVTAGGSLLVLSGLTLAGTVIALTVATPLLVIFSPVLVPAVVTVALIIT  81
+
+Query  105  GILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEI  164
+            G L +G  G+  + + SW+    R + G+   D++++A+ ++        Q TK     I
+Sbjct  82   GFLASGGFGIAAITAFSWL---YRHMTGSG-SDKIENARMKVGSRV----QDTKYGQHNI  133
+
+Query  165  QTKAQDV  171
+              + Q V
+Sbjct  134  GVQHQQV  140
+
+
+>UniRef50_P13436 Oleosin Zm-I n=33 Tax=Mesangiospermae TaxID=1437183 
+RepID=OLEO1_MAIZE
+Length=156
+
+ Score = 74.7 bits (182),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 48/110 (44%), Positives = 64/110 (58%), Gaps = 5/110 (5%)
+
+Query  60   GGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMS  119
+            GG++L+LSGL L GT+I L +ATPV   FSPV+VPA + + L   G +T+G  G+  L  
+Sbjct  50   GGSMLVLSGLILAGTVIALTVATPVLVIFSPVLVPAAIALALMAAGFVTSGGLGVAALSV  109
+
+Query  120  LSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQ  169
+             SWM  ++   H     DQLD AK R+A  A    +  KDA Q    +AQ
+Sbjct  110  FSWMYKYLTGKH-PPAADQLDHAKARLASKA----RDVKDAAQHRIDQAQ  154
+
+
+>UniRef50_Q43804 Oleosin 1 n=67 Tax=Mesangiospermae TaxID=1437183 
+RepID=OLEO1_PRUDU
+Length=148
+
+ Score = 66.2 bits (160),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 37/93 (40%), Positives = 56/93 (60%), Gaps = 5/93 (5%)
+
+Query  73   GTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHG  132
+            GT+I L IATP+   FSPV+VPA++T+ L  +G LT+G  G+  +  LSW+  +   V G
+Sbjct  49   GTVIALTIATPLLVIFSPVLVPALITVALITMGFLTSGGFGVAAVTVLSWIYKY---VTG  105
+
+Query  133  TTVP--DQLDSAKRRMADMADYVGQKTKDAGQE  163
+               P  DQLD A+ ++A  A  +  + +  GQ+
+Sbjct  106  KQPPGADQLDQARHKLAGKARDIKDRAEQFGQQ  138
+
+
+>UniRef50_P29525 Oleosin 18.5 kDa n=50 Tax=Brassicaceae TaxID=3700 
+RepID=OLEO1_ARATH
+Length=173
+
+ Score = 65.9 bits (159),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 43/128 (34%), Positives = 72/128 (56%), Gaps = 1/128 (1%)
+
+Query  47   TSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGI  106
+            + QI      V  GG+LL+LS L+L+GT+I L +ATP+   FSP++VPA++T+ L + G 
+Sbjct  40   SRQIAKAATAVTAGGSLLVLSSLTLVGTVIALTVATPLLVIFSPILVPALITVALLITGF  99
+
+Query  107  LTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQT  166
+            L++G  G+  +   SW+  +    H     D+LDSA+ ++   A  +  + +  GQ+   
+Sbjct  100  LSSGGFGIAAITVFSWIYKYATGEHPQG-SDKLDSARMKLGSKAQDLKDRAQYYGQQHTG  158
+
+Query  167  KAQDVKRS  174
+               D  R+
+Sbjct  159  GEHDRDRT  166
+
+
+>UniRef50_Q9LY09 Oleosin GRP-17 n=21 Tax=rosids TaxID=71275 RepID=GRP17_ARATH
+Length=543
+
+ Score = 46.2 bits (108),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 21/76 (28%), Positives = 40/76 (53%), Gaps = 0/76 (0%)
+
+Query  49   QIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILT  108
+            ++I +++        +  + ++L G+   L ++TPVF  FSPV+VPA +   +   G   
+Sbjct  64   EVIKIIIASVASVIFVGFACVTLAGSAAALVVSTPVFIIFSPVLVPATIATVVLATGFTA  123
+
+Query  109  AGACGLTGLMSLSWMI  124
+             G+ G T L  + W++
+Sbjct  124  GGSFGATALGLIMWLV  139
+
+
+>UniRef50_P29526 Oleosin-B2 (Fragment) n=13 Tax=Brassiceae TaxID=981071 
+RepID=OLNB2_BRANA
+Length=183
+
+ Score = 43.9 bits (102),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 22/68 (32%), Positives = 39/68 (57%), Gaps = 0/68 (0%)
+
+Query  50   IIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTA  109
+            +I +++   T    L  S ++L G+ + L ++TP+F  FSP++VPA +   L   G++  
+Sbjct  21   VIKLIIASVTSLVCLAFSCVALGGSAVALIVSTPLFIMFSPILVPATIATTLLASGLMAG  80
+
+Query  110  GACGLTGL  117
+               GLTG+
+Sbjct  81   TTLGLTGI  88
+
+
+>UniRef50_Q43402 Oleosin-B6 n=2 Tax=Brassica TaxID=3705 RepID=OLNB6_BRANA
+Length=375
+
+ Score = 43.9 bits (102),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 21/62 (34%), Positives = 35/62 (56%), Gaps = 0/62 (0%)
+
+Query  63   LLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSW  122
+             L   G++L  + + LA++TP+F  FSP++VPA +   L   G+      G+TG+  L  
+Sbjct  43   FLGFGGVTLACSAVALAVSTPLFIIFSPILVPATIATTLLATGLGAGTTLGVTGMGLLMR  102
+
+Query  123  MI  124
+            +I
+Sbjct  103  LI  104
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.135    0.387    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 3887444880
+Results from round 2
+
+
+Query= sp|Q9AXI0
+
+Length=176
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+UniRef50_C3S7F0 Oleosin S1-2 n=24 Tax=Pentapetalae TaxID=1437201 ...  169        3e-53
+UniRef50_Q39165 Oleosin 21.2 kDa n=57 Tax=Brassicaceae TaxID=3700...  154        4e-47
+UniRef50_P29531 P24 oleosin isoform B n=17 Tax=NPAAA clade TaxID=...  154        6e-47
+UniRef50_P29529 Oleosin (Fragment) n=16 Tax=Pentapetalae TaxID=14...  144        3e-43
+UniRef50_P29528 Oleosin 16.4 kDa n=111 Tax=cellular organisms Tax...  140        3e-42
+UniRef50_P29525 Oleosin 18.5 kDa n=50 Tax=Brassicaceae TaxID=3700...  131        2e-38
+UniRef50_Q43284 Oleosin 14.9 kDa n=26 Tax=rosids TaxID=71275 RepI...  119        3e-34
+UniRef50_Q43804 Oleosin 1 n=67 Tax=Mesangiospermae TaxID=1437183 ...  107        2e-29
+UniRef50_P13436 Oleosin Zm-I n=33 Tax=Mesangiospermae TaxID=14371...  105        1e-28
+UniRef50_P21641 Oleosin Zm-II n=29 Tax=Poaceae TaxID=4479 RepID=O...  105        4e-28
+UniRef50_Q9LY09 Oleosin GRP-17 n=21 Tax=rosids TaxID=71275 RepID=...  99.8       4e-24
+UniRef50_Q43402 Oleosin-B6 n=2 Tax=Brassica TaxID=3705 RepID=OLNB...  87.9       4e-20
+UniRef50_P29526 Oleosin-B2 (Fragment) n=13 Tax=Brassiceae TaxID=9...  83.3       1e-19
+
+Sequences not found previously or not previously below threshold:
+
+UniRef50_Q42626 Oleosin-B3 n=17 Tax=Brassiceae TaxID=981071 RepID...  62.9       3e-11
+UniRef50_Q00650 Oleosin-B1 n=9 Tax=Brassiceae TaxID=981071 RepID=...  59.4       9e-11
+
+
+>UniRef50_C3S7F0 Oleosin S1-2 n=24 Tax=Pentapetalae TaxID=1437201 
+RepID=OLES1_BRANA
+Length=193
+
+ Score = 169 bits (429),  Expect = 3e-53, Method: Composition-based stats.
+ Identities = 89/167 (53%), Positives = 117/167 (70%), Gaps = 13/167 (8%)
+
+Query  10   HQVQVHTPTTQRVDVQRRGYDVSGGGVKTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGL  69
+            HQVQVH P  Q             GG+K   P  GPS++Q++AV+ GVP GGTLL L+GL
+Sbjct  9    HQVQVH-PLRQH-----------EGGIKVVYPQSGPSSTQVLAVVAGVPVGGTLLTLAGL  56
+
+Query  70   SLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQ  129
+            +L  ++IGL +A P+F  FSPVIVPA   IGLA+ G + +GA GLTGL S+SW++N IR+
+Sbjct  57   TLAVSVIGLILAFPLFLIFSPVIVPAAFVIGLAMTGFMASGAIGLTGLSSMSWVLNHIRR  116
+
+Query  130  VHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQDVKRSSS  176
+            V    +PD+LD AK+R+ADMA+Y GQ+TKDAGQ I+ KA DV+ S +
+Sbjct  117  VR-ERIPDELDEAKQRLADMAEYAGQRTKDAGQTIEDKAHDVRESKT  162
+
+
+>UniRef50_Q39165 Oleosin 21.2 kDa n=57 Tax=Brassicaceae TaxID=3700 
+RepID=OLEO2_ARATH
+Length=199
+
+ Score = 154 bits (389),  Expect = 4e-47, Method: Composition-based stats.
+ Identities = 76/137 (55%), Positives = 105/137 (77%), Gaps = 1/137 (1%)
+
+Query  37   KTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAV  96
+            K+ +P+ GPS++Q++++L+GVP  G+LL L+GL L G++IGL +A P+F  FSPVIVPA 
+Sbjct  41   KSMMPESGPSSTQVLSLLIGVPVVGSLLALAGLLLAGSVIGLMVALPLFLLFSPVIVPAA  100
+
+Query  97   VTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQK  156
+            +TIGLA+ G L +G  GLTGL S+SW++N++R     TVP+QL+ AKRRMAD   Y GQK
+Sbjct  101  LTIGLAMTGFLASGMFGLTGLSSISWVMNYLRGTR-RTVPEQLEYAKRRMADAVGYAGQK  159
+
+Query  157  TKDAGQEIQTKAQDVKR  173
+             K+ GQ +Q KAQDVK+
+Sbjct  160  GKEMGQHVQNKAQDVKQ  176
+
+
+>UniRef50_P29531 P24 oleosin isoform B n=17 Tax=NPAAA clade TaxID=2231382 
+RepID=OLEO2_SOYBN
+Length=223
+
+ Score = 154 bits (390),  Expect = 6e-47, Method: Composition-based stats.
+ Identities = 83/181 (46%), Positives = 109/181 (60%), Gaps = 16/181 (9%)
+
+Query  5    TDRAPHQVQVHTPTTQRVDV-----QRRGYDVSGGGVKT----FLPDRGPSTSQIIAVLV  55
+            T   PH VQVHT TT R +       R        G+K     +  +RGP+TSQ++AV+ 
+Sbjct  2    TTVPPHSVQVHT-TTHRYEAGVVPPARFEAPRYEAGIKAPSSIYHSERGPTTSQVLAVVA  60
+
+Query  56   GVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLT  115
+            G+P GG LLLL+GL+L GT+ GL +ATP+F  FSPV++PA V IGLAV G LT+G  GLT
+Sbjct  61   GLPVGGILLLLAGLTLAGTLTGLVVATPLFIIFSPVLIPATVAIGLAVAGFLTSGVFGLT  120
+
+Query  116  GLMSLSWMINFIRQVHGTT------VPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQ  169
+             L S SW++N+IR+    +          L  A   +      VGQKTK+ GQ+IQ+KAQ
+Sbjct  121  ALSSFSWILNYIRETQPASENLAAAAKHHLAEAAEYVGQKTKEVGQKTKEVGQDIQSKAQ  180
+
+Query  170  D  170
+            D
+Sbjct  181  D  181
+
+
+>UniRef50_P29529 Oleosin (Fragment) n=16 Tax=Pentapetalae TaxID=1437201 
+RepID=OLEO_HELAN
+Length=181
+
+ Score = 144 bits (362),  Expect = 3e-43, Method: Composition-based stats.
+ Identities = 68/127 (54%), Positives = 93/127 (73%), Gaps = 1/127 (1%)
+
+Query  46   STSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIG  105
+            STS+ +A++  +P GG LL L+ L+ +GT+IGLA+ATP+F  FSP+IVPAV+TIGLAV G
+Sbjct  32   STSRTLAIIALLPVGGILLGLAALTFIGTLIGLALATPLFVIFSPIIVPAVLTIGLAVTG  91
+
+Query  106  ILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQ  165
+             L +G  GLTGL SLS++ N +RQ  G +VP+ LD  K  + D  +Y GQKTKD GQ+IQ
+Sbjct  92   FLASGTFGLTGLSSLSYLFNMVRQTAG-SVPESLDYVKGTLQDAGEYAGQKTKDFGQKIQ  150
+
+Query  166  TKAQDVK  172
+            + A ++ 
+Sbjct  151  STAHEMG  157
+
+
+>UniRef50_P29528 Oleosin 16.4 kDa n=111 Tax=cellular organisms 
+TaxID=131567 RepID=OLEO7_GOSHI
+Length=154
+
+ Score = 140 bits (353),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 73/133 (55%), Positives = 94/133 (71%), Gaps = 1/133 (1%)
+
+Query  42   DRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGL  101
+              GPST+Q++ VL  +P GGTLL L+GL+L GT+IGL +ATP+F  FSPV+VPA + + +
+Sbjct  23   QSGPSTTQVLTVLTLLPIGGTLLALAGLTLTGTVIGLCMATPLFVIFSPVLVPAAIAVFM  82
+
+Query  102  AVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAG  161
+            AV G L++GA GLTGL SLS++ N  RQ  GT   D  D AKR M DM  YVGQKTK+ G
+Sbjct  83   AVAGFLSSGAFGLTGLSSLSYVFNRFRQATGTEQLDA-DRAKRGMQDMVGYVGQKTKETG  141
+
+Query  162  QEIQTKAQDVKRS  174
+            Q I+ KA +  R+
+Sbjct  142  QTIENKAHEGGRT  154
+
+
+>UniRef50_P29525 Oleosin 18.5 kDa n=50 Tax=Brassicaceae TaxID=3700 
+RepID=OLEO1_ARATH
+Length=173
+
+ Score = 131 bits (329),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 49/161 (30%), Positives = 82/161 (51%), Gaps = 5/161 (3%)
+
+Query  19   TQRVDVQRRGYDVSGGGVKTF-LPDRGP---STSQIIAVLVGVPTGGTLLLLSGLSLLGT  74
+            T    + R  Y + G     + +  RG     + QI      V  GG+LL+LS L+L+GT
+Sbjct  8    THHDIIGRDQYPMMGRDRDQYQMSGRGSDYSKSRQIAKAATAVTAGGSLLVLSSLTLVGT  67
+
+Query  75   IIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTT  134
+            +I L +ATP+   FSP++VPA++T+ L + G L++G  G+  +   SW+  +    H   
+Sbjct  68   VIALTVATPLLVIFSPILVPALITVALLITGFLSSGGFGIAAITVFSWIYKYATGEHPQG  127
+
+Query  135  VPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQDVKRSS  175
+              D+LDSA+ ++   A  +  + +  GQ+      D  R+ 
+Sbjct  128  -SDKLDSARMKLGSKAQDLKDRAQYYGQQHTGGEHDRDRTR  167
+
+
+>UniRef50_Q43284 Oleosin 14.9 kDa n=26 Tax=rosids TaxID=71275 
+RepID=OLEO3_ARATH
+Length=141
+
+ Score = 119 bits (298),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 44/130 (34%), Positives = 71/130 (55%), Gaps = 8/130 (6%)
+
+Query  42   DRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGL  101
+            +  P   Q++     V  GG+LL+LSGL+L GT+I L +ATP+   FSPV+VPAVVT+ L
+Sbjct  19   EAHPKARQMVKAATAVTAGGSLLVLSGLTLAGTVIALTVATPLLVIFSPVLVPAVVTVAL  78
+
+Query  102  AVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAG  161
+             + G L +G  G+  + + SW+   +      +  D++++A+ ++        Q TK   
+Sbjct  79   IITGFLASGGFGIAAITAFSWLYRHMTG----SGSDKIENARMKVGSRV----QDTKYGQ  130
+
+Query  162  QEIQTKAQDV  171
+              I  + Q V
+Sbjct  131  HNIGVQHQQV  140
+
+
+>UniRef50_Q43804 Oleosin 1 n=67 Tax=Mesangiospermae TaxID=1437183 
+RepID=OLEO1_PRUDU
+Length=148
+
+ Score = 107 bits (267),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 47/134 (35%), Positives = 73/134 (54%), Gaps = 1/134 (1%)
+
+Query  37   KTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAV  96
+            +     + P + Q+      V  GG+LL+LSGL L GT+I L IATP+   FSPV+VPA+
+Sbjct  13   QGSYGQQQPRSYQVAKAATAVTAGGSLLVLSGLVLAGTVIALTIATPLLVIFSPVLVPAL  72
+
+Query  97   VTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQK  156
+            +T+ L  +G LT+G  G+  +  LSW+  ++         DQLD A+ ++A  A  +  +
+Sbjct  73   ITVALITMGFLTSGGFGVAAVTVLSWIYKYVTGKQPPGA-DQLDQARHKLAGKARDIKDR  131
+
+Query  157  TKDAGQEIQTKAQD  170
+             +  GQ+     Q 
+Sbjct  132  AEQFGQQHVPSGQQ  145
+
+
+>UniRef50_P13436 Oleosin Zm-I n=33 Tax=Mesangiospermae TaxID=1437183 
+RepID=OLEO1_MAIZE
+Length=156
+
+ Score = 105 bits (263),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 49/110 (45%), Positives = 64/110 (58%), Gaps = 5/110 (5%)
+
+Query  60   GGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMS  119
+            GG++L+LSGL L GT+I L +ATPV   FSPV+VPA + + L   G +T+G  G+  L  
+Sbjct  50   GGSMLVLSGLILAGTVIALTVATPVLVIFSPVLVPAAIALALMAAGFVTSGGLGVAALSV  109
+
+Query  120  LSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQ  169
+             SWM  ++   H     DQLD AK R+A  A  V    KDA Q    +AQ
+Sbjct  110  FSWMYKYLTGKHPP-AADQLDHAKARLASKARDV----KDAAQHRIDQAQ  154
+
+
+>UniRef50_P21641 Oleosin Zm-II n=29 Tax=Poaceae TaxID=4479 RepID=OLEO3_MAIZE
+Length=187
+
+ Score = 105 bits (261),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 73/156 (47%), Positives = 96/156 (62%), Gaps = 1/156 (1%)
+
+Query  15   HTPTTQRVDVQRRGYDVSGGGVKTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGT  74
+            H    Q+      G  +     K  L D+GP+ SQ + V    P GG LL+LSGL+L  +
+Sbjct  14   HATYGQQQQQGGGGRPMGEQVKKGMLHDKGPTASQALTVATLFPLGGLLLVLSGLALTAS  73
+
+Query  75   IIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTT  134
+            ++GLA+ATPVF  FSPV+VPA + IG AV+G LT+GA GL GL SL+ + N  RQ    T
+Sbjct  74   VVGLAVATPVFLIFSPVLVPAALLIGTAVMGFLTSGALGLGGLSSLTCLANTARQAFQRT  133
+
+Query  135  VPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQD  170
+             PD ++ A+RRMA+ A   G KT  AGQ IQ +AQ+
+Sbjct  134  -PDYVEEARRRMAEAAAQAGHKTAQAGQAIQGRAQE  168
+
+
+>UniRef50_Q9LY09 Oleosin GRP-17 n=21 Tax=rosids TaxID=71275 RepID=GRP17_ARATH
+Length=543
+
+ Score = 99.8 bits (247),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 23/88 (26%), Positives = 42/88 (48%), Gaps = 0/88 (0%)
+
+Query  49   QIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILT  108
+            ++I +++        +  + ++L G+   L ++TPVF  FSPV+VPA +   +   G   
+Sbjct  64   EVIKIIIASVASVIFVGFACVTLAGSAAALVVSTPVFIIFSPVLVPATIATVVLATGFTA  123
+
+Query  109  AGACGLTGLMSLSWMINFIRQVHGTTVP  136
+             G+ G T L  + W++     V     P
+Sbjct  124  GGSFGATALGLIMWLVKRRMGVKPKDNP  151
+
+
+>UniRef50_Q43402 Oleosin-B6 n=2 Tax=Brassica TaxID=3705 RepID=OLNB6_BRANA
+Length=375
+
+ Score = 87.9 bits (216),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 23/78 (29%), Positives = 41/78 (53%), Gaps = 0/78 (0%)
+
+Query  49   QIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILT  108
+            ++I V++        L   G++L  + + LA++TP+F  FSP++VPA +   L   G+  
+Sbjct  29   EVIKVVMASVASVVFLGFGGVTLACSAVALAVSTPLFIIFSPILVPATIATTLLATGLGA  88
+
+Query  109  AGACGLTGLMSLSWMINF  126
+                G+TG+  L  +I  
+Sbjct  89   GTTLGVTGMGLLMRLIKH  106
+
+
+>UniRef50_P29526 Oleosin-B2 (Fragment) n=13 Tax=Brassiceae TaxID=981071 
+RepID=OLNB2_BRANA
+Length=183
+
+ Score = 83.3 bits (204),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 44/87 (51%), Gaps = 0/87 (0%)
+
+Query  50   IIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTA  109
+            +I +++   T    L  S ++L G+ + L ++TP+F  FSP++VPA +   L   G++  
+Sbjct  21   VIKLIIASVTSLVCLAFSCVALGGSAVALIVSTPLFIMFSPILVPATIATTLLASGLMAG  80
+
+Query  110  GACGLTGLMSLSWMINFIRQVHGTTVP  136
+               GLTG+  +  ++     V     P
+Sbjct  81   TTLGLTGIGLIMGLVRTAGGVSLLQSP  107
+
+
+>UniRef50_Q42626 Oleosin-B3 n=17 Tax=Brassiceae TaxID=981071 RepID=OLNB3_BRANA
+Length=424
+
+ Score = 62.9 bits (151),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 36/60 (60%), Gaps = 0/60 (0%)
+
+Query  49   QIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILT  108
+            ++I ++V        L  +G++L G+ + LA++TP+F  FSP+++PA+    +   G+ +
+Sbjct  34   EVIKMVVASVASVVYLGFAGVTLSGSAVALAVSTPLFIIFSPILLPAIAATTVLAAGLGS  93
+
+
+>UniRef50_Q00650 Oleosin-B1 n=9 Tax=Brassiceae TaxID=981071 RepID=OLNB1_BRANA
+Length=157
+
+ Score = 59.4 bits (142),  Expect = 9e-11, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 46/99 (46%), Gaps = 0/99 (0%)
+
+Query  41   PDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIG  100
+             +R  S   ++  ++       LLL+SG+SL GT        P+F  FSP++VPA +T G
+Sbjct  9    HERNASFKSVLTSILATQAATFLLLISGVSLAGTAAAFIATMPLFVVFSPILVPAGITTG  68
+
+Query  101  LAVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQL  139
+            L   G+  AG  G T +  + W+           V  ++
+Sbjct  69   LLTTGLAAAGGAGATAVTIILWLYKRATGKEPPAVLSKV  107
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.121    0.300    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0372    0.140     1.90     42.6     43.6 
+
+Effective search space used: 3887444880
+Results from round 3
+
+
+Query= sp|Q9AXI0
+
+Length=176
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+UniRef50_C3S7F0 Oleosin S1-2 n=24 Tax=Pentapetalae TaxID=1437201 ...  164        2e-51
+UniRef50_P29525 Oleosin 18.5 kDa n=50 Tax=Brassicaceae TaxID=3700...  154        2e-47
+UniRef50_Q39165 Oleosin 21.2 kDa n=57 Tax=Brassicaceae TaxID=3700...  153        1e-46
+UniRef50_P29531 P24 oleosin isoform B n=17 Tax=NPAAA clade TaxID=...  149        5e-45
+UniRef50_P29529 Oleosin (Fragment) n=16 Tax=Pentapetalae TaxID=14...  142        8e-43
+UniRef50_P29528 Oleosin 16.4 kDa n=111 Tax=cellular organisms Tax...  138        3e-41
+UniRef50_Q43284 Oleosin 14.9 kDa n=26 Tax=rosids TaxID=71275 RepI...  124        5e-36
+UniRef50_Q43804 Oleosin 1 n=67 Tax=Mesangiospermae TaxID=1437183 ...  119        4e-34
+UniRef50_P21641 Oleosin Zm-II n=29 Tax=Poaceae TaxID=4479 RepID=O...  111        2e-30
+UniRef50_P13436 Oleosin Zm-I n=33 Tax=Mesangiospermae TaxID=14371...  108        1e-29
+UniRef50_Q9LY09 Oleosin GRP-17 n=21 Tax=rosids TaxID=71275 RepID=...  114        4e-29
+UniRef50_P29526 Oleosin-B2 (Fragment) n=13 Tax=Brassiceae TaxID=9...  94.9       4e-24
+UniRef50_Q43402 Oleosin-B6 n=2 Tax=Brassica TaxID=3705 RepID=OLNB...  94.5       2e-22
+UniRef50_Q00650 Oleosin-B1 n=9 Tax=Brassiceae TaxID=981071 RepID=...  85.6       8e-21
+UniRef50_Q42626 Oleosin-B3 n=17 Tax=Brassiceae TaxID=981071 RepID...  70.2       9e-14
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>UniRef50_C3S7F0 Oleosin S1-2 n=24 Tax=Pentapetalae TaxID=1437201 
+RepID=OLES1_BRANA
+Length=193
+
+ Score = 164 bits (416),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 89/167 (53%), Positives = 117/167 (70%), Gaps = 13/167 (8%)
+
+Query  10   HQVQVHTPTTQRVDVQRRGYDVSGGGVKTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGL  69
+            HQVQVH P  Q             GG+K   P  GPS++Q++AV+ GVP GGTLL L+GL
+Sbjct  9    HQVQVH-PLRQH-----------EGGIKVVYPQSGPSSTQVLAVVAGVPVGGTLLTLAGL  56
+
+Query  70   SLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQ  129
+            +L  ++IGL +A P+F  FSPVIVPA   IGLA+ G + +GA GLTGL S+SW++N IR+
+Sbjct  57   TLAVSVIGLILAFPLFLIFSPVIVPAAFVIGLAMTGFMASGAIGLTGLSSMSWVLNHIRR  116
+
+Query  130  VHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQDVKRSSS  176
+            V    +PD+LD AK+R+ADMA+Y GQ+TKDAGQ I+ KA DV+ S +
+Sbjct  117  VR-ERIPDELDEAKQRLADMAEYAGQRTKDAGQTIEDKAHDVRESKT  162
+
+
+>UniRef50_P29525 Oleosin 18.5 kDa n=50 Tax=Brassicaceae TaxID=3700 
+RepID=OLEO1_ARATH
+Length=173
+
+ Score = 154 bits (388),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 49/161 (30%), Positives = 82/161 (51%), Gaps = 5/161 (3%)
+
+Query  19   TQRVDVQRRGYDVSGGGVKTF-LPDRGP---STSQIIAVLVGVPTGGTLLLLSGLSLLGT  74
+            T    + R  Y + G     + +  RG     + QI      V  GG+LL+LS L+L+GT
+Sbjct  8    THHDIIGRDQYPMMGRDRDQYQMSGRGSDYSKSRQIAKAATAVTAGGSLLVLSSLTLVGT  67
+
+Query  75   IIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTT  134
+            +I L +ATP+   FSP++VPA++T+ L + G L++G  G+  +   SW+  +    H   
+Sbjct  68   VIALTVATPLLVIFSPILVPALITVALLITGFLSSGGFGIAAITVFSWIYKYATGEHPQG  127
+
+Query  135  VPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQDVKRSS  175
+              D+LDSA+ ++   A  +  + +  GQ+      D  R+ 
+Sbjct  128  S-DKLDSARMKLGSKAQDLKDRAQYYGQQHTGGEHDRDRTR  167
+
+
+>UniRef50_Q39165 Oleosin 21.2 kDa n=57 Tax=Brassicaceae TaxID=3700 
+RepID=OLEO2_ARATH
+Length=199
+
+ Score = 153 bits (385),  Expect = 1e-46, Method: Composition-based stats.
+ Identities = 83/175 (47%), Positives = 113/175 (65%), Gaps = 13/175 (7%)
+
+Query  6    DRAPHQVQVHTPTTQRVDVQRRGYDVSGGGV-------KTFLPDRGPSTSQIIAVLVGVP  58
+            DR     Q  +P         RG     G         K+ +P+ GPS++Q++++L+GVP
+Sbjct  8    DRTDRHFQFQSPY-----EGGRGQGQYEGDRGYGGGGYKSMMPESGPSSTQVLSLLIGVP  62
+
+Query  59   TGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLM  118
+              G+LL L+GL L G++IGL +A P+F  FSPVIVPA +TIGLA+ G L +G  GLTGL 
+Sbjct  63   VVGSLLALAGLLLAGSVIGLMVALPLFLLFSPVIVPAALTIGLAMTGFLASGMFGLTGLS  122
+
+Query  119  SLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQDVKR  173
+            S+SW++N++R     TVP+QL+ AKRRMAD   Y GQK K+ GQ +Q KAQDVK+
+Sbjct  123  SISWVMNYLRGTR-RTVPEQLEYAKRRMADAVGYAGQKGKEMGQHVQNKAQDVKQ  176
+
+
+>UniRef50_P29531 P24 oleosin isoform B n=17 Tax=NPAAA clade TaxID=2231382 
+RepID=OLEO2_SOYBN
+Length=223
+
+ Score = 149 bits (376),  Expect = 5e-45, Method: Composition-based stats.
+ Identities = 83/181 (46%), Positives = 109/181 (60%), Gaps = 16/181 (9%)
+
+Query  5    TDRAPHQVQVHTPTTQRVDVQ-----RRGYDVSGGGVKT----FLPDRGPSTSQIIAVLV  55
+            T   PH VQVHT TT R +       R        G+K     +  +RGP+TSQ++AV+ 
+Sbjct  2    TTVPPHSVQVHT-TTHRYEAGVVPPARFEAPRYEAGIKAPSSIYHSERGPTTSQVLAVVA  60
+
+Query  56   GVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLT  115
+            G+P GG LLLL+GL+L GT+ GL +ATP+F  FSPV++PA V IGLAV G LT+G  GLT
+Sbjct  61   GLPVGGILLLLAGLTLAGTLTGLVVATPLFIIFSPVLIPATVAIGLAVAGFLTSGVFGLT  120
+
+Query  116  GLMSLSWMINFIRQVHGTT------VPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQ  169
+             L S SW++N+IR+    +          L  A   +      VGQKTK+ GQ+IQ+KAQ
+Sbjct  121  ALSSFSWILNYIRETQPASENLAAAAKHHLAEAAEYVGQKTKEVGQKTKEVGQDIQSKAQ  180
+
+Query  170  D  170
+            D
+Sbjct  181  D  181
+
+
+>UniRef50_P29529 Oleosin (Fragment) n=16 Tax=Pentapetalae TaxID=1437201 
+RepID=OLEO_HELAN
+Length=181
+
+ Score = 142 bits (358),  Expect = 8e-43, Method: Composition-based stats.
+ Identities = 70/158 (44%), Positives = 98/158 (62%), Gaps = 3/158 (2%)
+
+Query  17   PTTQRVDVQRRGYDVSGGGVKTFLPDR--GPSTSQIIAVLVGVPTGGTLLLLSGLSLLGT  74
+             TT                 ++    +    STS+ +A++  +P GG LL L+ L+ +GT
+Sbjct  1    TTTTYDRHFTTTQPHYRQDDRSRYDQQTHSQSTSRTLAIIALLPVGGILLGLAALTFIGT  60
+
+Query  75   IIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTT  134
+            +IGLA+ATP+F  FSP+IVPAV+TIGLAV G L +G  GLTGL SLS++ N +RQ  G +
+Sbjct  61   LIGLALATPLFVIFSPIIVPAVLTIGLAVTGFLASGTFGLTGLSSLSYLFNMVRQTAG-S  119
+
+Query  135  VPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQDVK  172
+            VP+ LD  K  + D  +Y GQKTKD GQ+IQ+ A ++ 
+Sbjct  120  VPESLDYVKGTLQDAGEYAGQKTKDFGQKIQSTAHEMG  157
+
+
+>UniRef50_P29528 Oleosin 16.4 kDa n=111 Tax=cellular organisms 
+TaxID=131567 RepID=OLEO7_GOSHI
+Length=154
+
+ Score = 138 bits (346),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 73/133 (55%), Positives = 94/133 (71%), Gaps = 1/133 (1%)
+
+Query  42   DRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGL  101
+              GPST+Q++ VL  +P GGTLL L+GL+L GT+IGL +ATP+F  FSPV+VPA + + +
+Sbjct  23   QSGPSTTQVLTVLTLLPIGGTLLALAGLTLTGTVIGLCMATPLFVIFSPVLVPAAIAVFM  82
+
+Query  102  AVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAG  161
+            AV G L++GA GLTGL SLS++ N  RQ  GT   D  D AKR M DM  YVGQKTK+ G
+Sbjct  83   AVAGFLSSGAFGLTGLSSLSYVFNRFRQATGTEQLDA-DRAKRGMQDMVGYVGQKTKETG  141
+
+Query  162  QEIQTKAQDVKRS  174
+            Q I+ KA +  R+
+Sbjct  142  QTIENKAHEGGRT  154
+
+
+>UniRef50_Q43284 Oleosin 14.9 kDa n=26 Tax=rosids TaxID=71275 
+RepID=OLEO3_ARATH
+Length=141
+
+ Score = 124 bits (310),  Expect = 5e-36, Method: Composition-based stats.
+ Identities = 44/130 (34%), Positives = 71/130 (55%), Gaps = 8/130 (6%)
+
+Query  42   DRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGL  101
+            +  P   Q++     V  GG+LL+LSGL+L GT+I L +ATP+   FSPV+VPAVVT+ L
+Sbjct  19   EAHPKARQMVKAATAVTAGGSLLVLSGLTLAGTVIALTVATPLLVIFSPVLVPAVVTVAL  78
+
+Query  102  AVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAG  161
+             + G L +G  G+  + + SW+   +      +  D++++A+ ++        Q TK   
+Sbjct  79   IITGFLASGGFGIAAITAFSWLYRHMTG----SGSDKIENARMKVGSRV----QDTKYGQ  130
+
+Query  162  QEIQTKAQDV  171
+              I  + Q V
+Sbjct  131  HNIGVQHQQV  140
+
+
+>UniRef50_Q43804 Oleosin 1 n=67 Tax=Mesangiospermae TaxID=1437183 
+RepID=OLEO1_PRUDU
+Length=148
+
+ Score = 119 bits (299),  Expect = 4e-34, Method: Composition-based stats.
+ Identities = 47/134 (35%), Positives = 73/134 (54%), Gaps = 1/134 (1%)
+
+Query  37   KTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAV  96
+            +     + P + Q+      V  GG+LL+LSGL L GT+I L IATP+   FSPV+VPA+
+Sbjct  13   QGSYGQQQPRSYQVAKAATAVTAGGSLLVLSGLVLAGTVIALTIATPLLVIFSPVLVPAL  72
+
+Query  97   VTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQK  156
+            +T+ L  +G LT+G  G+  +  LSW+  ++         DQLD A+ ++A  A  +  +
+Sbjct  73   ITVALITMGFLTSGGFGVAAVTVLSWIYKYVTGKQPPGA-DQLDQARHKLAGKARDIKDR  131
+
+Query  157  TKDAGQEIQTKAQD  170
+             +  GQ+     Q 
+Sbjct  132  AEQFGQQHVPSGQQ  145
+
+
+>UniRef50_P21641 Oleosin Zm-II n=29 Tax=Poaceae TaxID=4479 RepID=OLEO3_MAIZE
+Length=187
+
+ Score = 111 bits (276),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 73/156 (47%), Positives = 96/156 (62%), Gaps = 1/156 (1%)
+
+Query  15   HTPTTQRVDVQRRGYDVSGGGVKTFLPDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGT  74
+            H    Q+      G  +     K  L D+GP+ SQ + V    P GG LL+LSGL+L  +
+Sbjct  14   HATYGQQQQQGGGGRPMGEQVKKGMLHDKGPTASQALTVATLFPLGGLLLVLSGLALTAS  73
+
+Query  75   IIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMSLSWMINFIRQVHGTT  134
+            ++GLA+ATPVF  FSPV+VPA + IG AV+G LT+GA GL GL SL+ + N  RQ    T
+Sbjct  74   VVGLAVATPVFLIFSPVLVPAALLIGTAVMGFLTSGALGLGGLSSLTCLANTARQAFQRT  133
+
+Query  135  VPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQD  170
+             PD ++ A+RRMA+ A   G KT  AGQ IQ +AQ+
+Sbjct  134  -PDYVEEARRRMAEAAAQAGHKTAQAGQAIQGRAQE  168
+
+
+>UniRef50_P13436 Oleosin Zm-I n=33 Tax=Mesangiospermae TaxID=1437183 
+RepID=OLEO1_MAIZE
+Length=156
+
+ Score = 108 bits (269),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 49/110 (45%), Positives = 64/110 (58%), Gaps = 5/110 (5%)
+
+Query  60   GGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTAGACGLTGLMS  119
+            GG++L+LSGL L GT+I L +ATPV   FSPV+VPA + + L   G +T+G  G+  L  
+Sbjct  50   GGSMLVLSGLILAGTVIALTVATPVLVIFSPVLVPAAIALALMAAGFVTSGGLGVAALSV  109
+
+Query  120  LSWMINFIRQVHGTTVPDQLDSAKRRMADMADYVGQKTKDAGQEIQTKAQ  169
+             SWM  ++   H     DQLD AK R+A  A  V    KDA Q    +AQ
+Sbjct  110  FSWMYKYLTGKHPPAA-DQLDHAKARLASKARDV----KDAAQHRIDQAQ  154
+
+
+>UniRef50_Q9LY09 Oleosin GRP-17 n=21 Tax=rosids TaxID=71275 RepID=GRP17_ARATH
+Length=543
+
+ Score = 114 bits (284),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 23/88 (26%), Positives = 42/88 (48%), Gaps = 0/88 (0%)
+
+Query  49   QIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILT  108
+            ++I +++        +  + ++L G+   L ++TPVF  FSPV+VPA +   +   G   
+Sbjct  64   EVIKIIIASVASVIFVGFACVTLAGSAAALVVSTPVFIIFSPVLVPATIATVVLATGFTA  123
+
+Query  109  AGACGLTGLMSLSWMINFIRQVHGTTVP  136
+             G+ G T L  + W++     V     P
+Sbjct  124  GGSFGATALGLIMWLVKRRMGVKPKDNP  151
+
+
+>UniRef50_P29526 Oleosin-B2 (Fragment) n=13 Tax=Brassiceae TaxID=981071 
+RepID=OLNB2_BRANA
+Length=183
+
+ Score = 94.9 bits (234),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 44/87 (51%), Gaps = 0/87 (0%)
+
+Query  50   IIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILTA  109
+            +I +++   T    L  S ++L G+ + L ++TP+F  FSP++VPA +   L   G++  
+Sbjct  21   VIKLIIASVTSLVCLAFSCVALGGSAVALIVSTPLFIMFSPILVPATIATTLLASGLMAG  80
+
+Query  110  GACGLTGLMSLSWMINFIRQVHGTTVP  136
+               GLTG+  +  ++     V     P
+Sbjct  81   TTLGLTGIGLIMGLVRTAGGVSLLQSP  107
+
+
+>UniRef50_Q43402 Oleosin-B6 n=2 Tax=Brassica TaxID=3705 RepID=OLNB6_BRANA
+Length=375
+
+ Score = 94.5 bits (233),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 23/78 (29%), Positives = 41/78 (53%), Gaps = 0/78 (0%)
+
+Query  49   QIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILT  108
+            ++I V++        L   G++L  + + LA++TP+F  FSP++VPA +   L   G+  
+Sbjct  29   EVIKVVMASVASVVFLGFGGVTLACSAVALAVSTPLFIIFSPILVPATIATTLLATGLGA  88
+
+Query  109  AGACGLTGLMSLSWMINF  126
+                G+TG+  L  +I  
+Sbjct  89   GTTLGVTGMGLLMRLIKH  106
+
+
+>UniRef50_Q00650 Oleosin-B1 n=9 Tax=Brassiceae TaxID=981071 RepID=OLNB1_BRANA
+Length=157
+
+ Score = 85.6 bits (210),  Expect = 8e-21, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 46/99 (46%), Gaps = 0/99 (0%)
+
+Query  41   PDRGPSTSQIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIG  100
+             +R  S   ++  ++       LLL+SG+SL GT        P+F  FSP++VPA +T G
+Sbjct  9    HERNASFKSVLTSILATQAATFLLLISGVSLAGTAAAFIATMPLFVVFSPILVPAGITTG  68
+
+Query  101  LAVIGILTAGACGLTGLMSLSWMINFIRQVHGTTVPDQL  139
+            L   G+  AG  G T +  + W+           V  ++
+Sbjct  69   LLTTGLAAAGGAGATAVTIILWLYKRATGKEPPAVLSKV  107
+
+
+>UniRef50_Q42626 Oleosin-B3 n=17 Tax=Brassiceae TaxID=981071 RepID=OLNB3_BRANA
+Length=424
+
+ Score = 70.2 bits (170),  Expect = 9e-14, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 36/60 (60%), Gaps = 0/60 (0%)
+
+Query  49   QIIAVLVGVPTGGTLLLLSGLSLLGTIIGLAIATPVFTFFSPVIVPAVVTIGLAVIGILT  108
+            ++I ++V        L  +G++L G+ + LA++TP+F  FSP+++PA+    +   G+ +
+Sbjct  34   EVIKMVVASVASVVYLGFAGVTLSGSAVALAVSTPLFIIFSPILLPAIAATTVLAAGLGS  93
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.123    0.299    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0376    0.140     1.90     42.6     43.6 
+
+Effective search space used: 3887444880
+
+Search has CONVERGED!
+
+
+  Database: uniref50_swissprotprot.fasta
+    Posted date:  Feb 1, 2020  4:34 PM
+  Number of letters in database: 73,243,730
+  Number of sequences in database:  185,110
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
