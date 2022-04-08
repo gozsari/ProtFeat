@@ -56,6 +56,7 @@ pip install -r requirements.txt
 ## How to run ProtFeat to extract the protein features 
 
 * Then run the following commands in the following order:
+### To use as a python package
 ```
 cd src
 python
@@ -64,6 +65,16 @@ import protFeat
 from protFeat.feature_extracter import extract_protein_feature, usage
 usage()
 extract_protein_feature(protein_feature, place_protein_id, input_folder, fasta_file_name)
+```
+or altenatively you may run ProtFeat from the terminal as the following:
+### To use as a terminal command
+```
+cd src
+python protFeat_command_line.py --pf protein_feature --ppid place_protein_id --inpf input_folder --fname fasta_file_name
+```
+For example, 
+```
+python protFeat_command_line.py --pf AAC --ppid 1 --inpf input_folder --fname sample
 ```
 ## Explanation of Parameters
 Here, we explain about
