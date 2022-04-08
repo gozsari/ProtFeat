@@ -69,6 +69,10 @@ from protFeat.feature_extracter import extract_protein_feature, usage
 usage()
 extract_protein_feature(protein_feature, place_protein_id, input_folder, fasta_file_name)
 ```
+For example, 
+```
+extract_protein_feature("AAC", 1, "input_folder", "sample")
+```
 or altenatively you may run ProtFeat from the terminal as the following:
 ### To use ProtFeat from terminal:
 ```
