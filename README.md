@@ -1,3 +1,6 @@
+<p align="center">
+<img width="800" height="120"  src="image/protFeat_banner.png">
+
 ## Description: 
 
 ProtFeat is designed to extract the protein features by employing POSSUM and iFeature python-based tools.
@@ -67,7 +70,8 @@ usage()
 extract_protein_feature(protein_feature, place_protein_id, input_folder, fasta_file_name)
 ```
 or altenatively you may run ProtFeat from the terminal as the following:
-### To use as a terminal command
+### To use as a 
+command
 ```
 cd src
 python protFeat_command_line.py --pf protein_feature --ppid place_protein_id --inpf input_folder --fname fasta_file_name
