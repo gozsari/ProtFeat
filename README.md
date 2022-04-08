@@ -106,7 +106,7 @@ folder with the name: **fasta_file_name_protein_feature.txt** (e.g. sample_AAC.t
 The content of the output files: 
   * The output file is *tab-seperated*.
   * Each row corresponds to the extracted features of the protein sequence
-  * The first column of each row is protein id (in UniProtKB), 
+  * The first column of each row is protein id (in [UniProtKB](https://www.uniprot.org/)), 
       the rest is extracted features of the protein sequence.
       
 ## Tables of the available protein descriptors
