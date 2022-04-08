@@ -105,6 +105,9 @@ class feature_extracter(object):
             os.mkdir(temp_output_folder)
         if os.path.isdir(pssm_dir) == False:
             os.mkdir(pssm_dir)
+        ncbi = '{}/ncbi-blast'.format(path_to_folder)
+        if os.path.isdir(ncbi) == False:
+            download_extract_ncbi_blast()
 
     def extract_POSSUM_feature(self):
         fasta_dict = read_fasta_to_dict(self.input_folder, self.fasta_file_name, self.place_protein_id)

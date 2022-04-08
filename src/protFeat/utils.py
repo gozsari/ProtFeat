@@ -1,4 +1,4 @@
-import os, platform, shutil, zipfile
+import os, platform, shutil
 import pathlib
 path_to_folder = pathlib.Path(__file__).parent.resolve()
 class bcolors:
@@ -48,7 +48,7 @@ def read_fasta_to_dict(input_dir, fasta_file, place_protein_id):
     with open("{}/{}.fasta".format(input_dir, fasta_file), "r") as fp:
         for line in fp:
             if line[0] == '>':
-                if prot_id != "":
+                if prot_id != "" and prot_id not in fasta_dict:
                     fasta_dict[prot_id] = sequence
                 prot_id = line.strip().split("|")[place_protein_id]
                 if place_protein_id == 0:
@@ -58,7 +58,6 @@ def read_fasta_to_dict(input_dir, fasta_file, place_protein_id):
             else:
                 sequence += line.strip()
         fasta_dict[prot_id] = sequence
-
     fp.close()
     return fasta_dict
 
@@ -95,6 +94,20 @@ def form_missing_pssm_files(pssm_dir):
         shutil.rmtree(path_single_fastas)
     except OSError as e:
         print("Error: %s - %s." % (e.filename, e.strerror))
+def download_extract_ncbi_blast():
+    import wget
+    from zipfile import ZipFile
+    remote_url = 'http://slpred.kansil.org/ncbi-blast.zip'
+    local_file = '{}/ncbi-blast.zip'.format(path_to_folder)
+    wget.download(remote_url, local_file)
+    # Create a ZipFile Object and load sample.zip in it
+    with ZipFile(local_file, 'r') as zipObj:
+        # Extract all the contents of zip file in current directory
+        zipObj.extractall('{}'.format(path_to_folder))
+        zipObj.close()
+    for ncbi_file in os.listdir('{}/ncbi-blast'.format(path_to_folder)):
+        path_file_ncbi = '{}/ncbi-blast/{}'.format(path_to_folder, ncbi_file)
+        os.chmod(path_file_ncbi, 0o777)
 
 def copy_pssms(fasta_dict):
     import requests
@@ -111,7 +124,7 @@ def copy_pssms(fasta_dict):
 
 def copy_form_pssm_matrices(fasta_dict):
     pssm_dir = "{}/pssm_files".format(path_to_folder)
-    list_proteins_no_pssm1 = fasta_dict.keys()
+    list_proteins_no_pssm1 = find_pssm_missing_proteins(fasta_dict, pssm_dir)
     if len(list_proteins_no_pssm1) != 0:
         copy_pssms(list_proteins_no_pssm1)
     list_proteins_no_pssm2 = find_pssm_missing_proteins(fasta_dict, pssm_dir)
