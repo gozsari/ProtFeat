@@ -3,6 +3,7 @@
 
 ![Linux](https://svgshare.com/i/Zhy.svg)
 ![version](https://img.shields.io/badge/version-1.0-blue)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
 ## Description: 
 
