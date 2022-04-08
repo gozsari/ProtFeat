@@ -13,7 +13,7 @@ thereby addressing a crucial need for bioinformaticians and computational biolog
  both protein and peptide sequences. iFeature is capable of calculating and extracting a comprehensive spectrum
  of 18 major sequence encoding schemes that encompass 53 different types of feature descriptors.
 
-<br/>Table.2: Protein descriptors obtained from the POSSUM tool.
+<br/>Table.1: Protein descriptors obtained from the POSSUM tool.
 
 | Descriptor group | Protein descriptor                                                                               | Number of dimensions
 ----------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------
@@ -22,7 +22,7 @@ Column Transformation| DPC-PSSM <br/> k-seperated-bigrams-PSSM <br/> tri-gram-PS
 Mixture of row and column transformation | EDP <br/> RPSSM <br/> Pre-PSSM <br/> DP-PSSM <br/> PSSM-AC <br/> PSSM-CC | 20 <br/> 110 <br/> 40 <br/> 240 <br/> 200 <br/> 3800
 Combination of above descriptors| AADP-PSSSM <br/> AATP <br/> MEDP | 420 <br/> 420 <br/> 420
 
-<br/>Table.3: Protein descriptors obtained from the İFeature tool.
+<br/>Table.2: Protein descriptors obtained from the İFeature tool.
 
 | Descriptor group | Protein descriptor                                                    | Number of dimensions
 ----------------------------------------|-----------------------------------------------------------------------|-----------------------------
