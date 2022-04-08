@@ -113,7 +113,7 @@ The content of the output files:
 
 Table 1: Protein descriptors obtained from the POSSUM tool.
 
-| Descriptor group | Protein descriptor··················| Number of dimensions
+| Descriptor group | Protein descriptor| Number of dimensions
 -------------------|-------------------------------------|---------------------
 Row Transformations| AAC-PSSM<br/>D-FPSSM<br/>smoothed-PSMM<br/>AB-PSSM<br/>PSSM-composition<br/>RPM-PSSM<br/>S-FPSSM |20<br/>20<br/>1000<br/>400<br/>400<br/>400<br/>400
 Column Transformation| DPC-PSSM <br/> k-seperated-bigrams-PSSM <br/> tri-gram-PSSM <br/> EEDP <br/> TPC                 | 400 <br/> 400 <br/> 8000 <br/> 4000 <br/>  400
