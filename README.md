@@ -60,8 +60,9 @@ For example,
 ```
 extract_protein_feature("AAC", 1, "input_folder", "sample")
 ```
-or altenatively you may run ProtFeat from the terminal as the following:
+
 ### To use ProtFeat from terminal:
+Altenatively you may run ProtFeat from the terminal as the following:
 ```
 cd src
 python protFeat_command_line.py --pf protein_feature --ppid place_protein_id --inpf input_folder --fname fasta_file_name
