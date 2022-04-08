@@ -1,5 +1,5 @@
 <p align="center">
-<img width="800" height="100"  src="image/protFeat_banner.png">
+<img width="850" height="100"  src="image/protFeat_banner.png">
 
 ![Linux](https://svgshare.com/i/Zhy.svg)
 ![version](https://img.shields.io/badge/version-1.0-blue)
