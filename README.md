@@ -43,7 +43,7 @@ conda activate protFeat_env
 
 * Clone the Git Repository.
 ```
-git clone https://github.com/gozsari/protFeat
+git clone https://github.com/gozsari/ProtFeat
 ```
 * In terminal or command line navigate into **protFeat** folder.
 ```
