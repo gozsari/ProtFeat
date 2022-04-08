@@ -94,20 +94,15 @@ python protFeat_command_line.py --pf AAC --ppid 1 --inpf input_folder --fname sa
 Here, we explain about
 **protein_feature: {string}, (default = 'aac_pssm'):** one of the 21 PSMM-based protein descriptors in POSSUM.
 
-* **POSSUM descriptors:** aac_pssm, d_fpssm, smoothed_pssm, ab_pssm, pssm_composition, rpm_pssm,
+**POSSUM descriptors:** aac_pssm, d_fpssm, smoothed_pssm, ab_pssm, pssm_composition, rpm_pssm,
 s_fpssm, dpc_pssm, k_separated_bigrams_pssm, eedp, tpc, edp, rpssm,
 pse_pssm, dp_pssm, pssm_ac, pssm_cc, aadp_pssm, aatp, medp , or all_POSSUM
-
-  * all_POSSUM: it extracts the features of all (21) POSSUM protein descriptors
-<br/>
+ **all_POSSUM:** it extracts the features of all (21) POSSUM protein descriptors
 
 or one of the 18 protein descriptors in iFeature.
-
-* **iFeature descriptors:** AAC, PAAC, APAAC, DPC, GAAC, CKSAAP, CKSAAGP, GDPC, Moran, Geary,
+**iFeature descriptors:** AAC, PAAC, APAAC, DPC, GAAC, CKSAAP, CKSAAGP, GDPC, Moran, Geary,
 NMBroto, CTDC, CTDD, CTDT, CTriad, KSCTriad, SOCNumber, QSOrder, or all_iFeature
-
-  * all_iFeature: it extracts the features of all (18) iFeature protein descriptors
-<br/>
+**all_iFeature:** it extracts the features of all (18) iFeature protein descriptors
 
 **place_protein_id: {int}, (default = 1):** It indicates the place of protein id in fasta header.
 e.g. fasta header: >sp|O27002|....|....|...., seperate the header wrt. '|' then >sp is
