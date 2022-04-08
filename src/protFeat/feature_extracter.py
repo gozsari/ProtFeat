@@ -79,7 +79,7 @@ class feature_extracter(object):
     '''
 
     def __init__(self, protein_feature='aac_pssm',
-                 place_protein_id=0,
+                 place_protein_id=1,
                  input_folder='input_folder',
                  fasta_file_name='sample'):
 
