@@ -111,7 +111,7 @@ The content of the output files:
       
 ## Tables of the available protein descriptors
 
-**Table 1: Protein descriptors obtained from the POSSUM tool.**
+Table 1: Protein descriptors obtained from the POSSUM tool.
 
 | Descriptor group | Protein descriptor                                                                               | Number of dimensions
 ----------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------
@@ -121,7 +121,7 @@ Mixture of row and column transformation | EDP <br/> RPSSM <br/> Pre-PSSM <br/> 
 Combination of above descriptors| AADP-PSSSM <br/> AATP <br/> MEDP | 420 <br/> 420 <br/> 420
 
 <br/>
-**Table 2: Protein descriptors obtained from the iFeature tool.**
+Table 2: Protein descriptors obtained from the iFeature tool.
 
 | Descriptor group | Protein descriptor                                                    | Number of dimensions
 ----------------------------------------|-----------------------------------------------------------------------|-----------------------------
