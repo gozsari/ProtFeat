@@ -1,6 +1,7 @@
 <p align="center">
 <img width="800" height="100"  src="image/protFeat_banner.png">
-[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+-Operating system: ![Linux](https://svgshare.com/i/Zhy.svg)
+
 ## Description: 
 
 ProtFeat is designed to extract the protein features by employing POSSUM and iFeature python-based tools.
