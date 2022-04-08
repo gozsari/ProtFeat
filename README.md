@@ -11,11 +11,11 @@
 
 ProtFeat is designed to extract the protein features by employing POSSUM and iFeature python-based tools.
 
-POSSUM (Position-Specific Scoring matrix-based feature generator for machine learning),
+[POSSUM](https://academic.oup.com/bioinformatics/article/33/17/2756/3813283) (Position-Specific Scoring matrix-based feature generator for machine learning),
 a versatile toolkit with an online web server that can generate 21 types of PSSM-based feature descriptors,
 thereby addressing a crucial need for bioinformaticians and computational biologists.
 
- iFeature, a versatile Python-based toolkit for generating various numerical feature representation schemes for
+ [iFeature](https://academic.oup.com/bioinformatics/article/34/14/2499/4924718), a versatile Python-based toolkit for generating various numerical feature representation schemes for
  both protein and peptide sequences. iFeature is capable of calculating and extracting a comprehensive spectrum
  of 18 major sequence encoding schemes that encompass 53 different types of feature descriptors.
 
