@@ -81,7 +81,7 @@ s_fpssm, dpc_pssm, k_separated_bigrams_pssm, eedp, tpc, edp, rpssm,
 pse_pssm, dp_pssm, pssm_ac, pssm_cc, aadp_pssm, aatp, medp , or all_POSSUM
 ```
 
-Note: all_POSSUM extracts the features of all (21) POSSUM protein descriptors
+Note: all_POSSUM extracts the features of all (21) POSSUM protein descriptors.
 
 iFeature descriptors:
 ```
@@ -89,7 +89,7 @@ AAC, PAAC, APAAC, DPC, GAAC, CKSAAP, CKSAAGP, GDPC, Moran, Geary,
 NMBroto, CTDC, CTDD, CTDT, CTriad, KSCTriad, SOCNumber, QSOrder, or all_iFeature
 ```
 
-Note: all_iFeature extracts the features of all (18) iFeature protein descriptors
+Note: all_iFeature extracts the features of all (18) iFeature protein descriptors.
 
 **place_protein_id: {int}, (default = 1):** It indicates the place of protein id in fasta header.
 e.g. fasta header: >sp|O27002|....|....|...., seperate the header wrt. '|' then >sp is
@@ -101,16 +101,16 @@ in the zeroth position, protein id in the first(1) position.
 
 
 ## Input file 
-It must be in fasta format
+It must be in fasta format.
 
 ## Output file
 The extracted feature files will be located under
 **feature_extraction_output** 
-folder with the name: **fasta_file_name_protein_feature.txt** (e.g. sample_AAC.txt)
+folder with the name: **fasta_file_name_protein_feature.txt** (e.g. sample_AAC.txt).
 
 The content of the output files: 
   * The output file is *tab-seperated*.
-  * Each row corresponds to the extracted features of the protein sequence
+  * Each row corresponds to the extracted features of the protein sequence.
   * The first column of each row is [UniProtKB](https://www.uniprot.org/) id of the proteins, 
       the rest is extracted features of the protein sequence.
       
