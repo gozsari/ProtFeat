@@ -16,7 +16,7 @@ def usage():
     print("ProtFeat usage:\n")
     print("import protFeat *:\n\n\t\t it is to import protFeat\n\n")
     print("from protFeat.feature_extracter import extract_protein_feature, usage\n")
-    print("extract_protein_feature(protein_feature, place_protein_id, input_folder, fasta_file_name):\n\n\
+    print("extract_protein_feature(protein_feature, place_protein_id, input_folder, fasta_file_name)\n\n\
           \t This function extracts the features of the fasta file (fasta_file_name) in the input folder (input_folder)\n\
           \t by using the protein feature extraction method (protein_feature)\n\n")
     print("Parameters:\n\nprotein_feature: {string}, (default = 'aac_pssm'):\n\n\t\t one of the 21 PSMM-based protein descriptors in POSSUM.\n\n\
