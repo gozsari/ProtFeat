@@ -1,6 +1,6 @@
 ## Description: 
 
-The feature_extracter class is designed to extract the protein features by employing POSSUM and iFeature python-based tools.
+ProtFeat is designed to extract the protein features by employing POSSUM and iFeature python-based tools.
 
 POSSUM (Position-Specific Scoring matrix-based feature generator for machine learning),
 a versatile toolkit with an online web server that can generate 21 types of PSSM-based feature descriptors,
@@ -72,17 +72,17 @@ Here, we explain about
 * **POSSUM descriptors:** aac_pssm, d_fpssm, smoothed_pssm, ab_pssm, pssm_composition, rpm_pssm,
 s_fpssm, dpc_pssm, k_separated_bigrams_pssm, eedp, tpc, edp, rpssm,
 pse_pssm, dp_pssm, pssm_ac, pssm_cc, aadp_pssm, aatp, medp , or all_POSSUM
-<br/><br/>
-  * all_POSSUM: it extracts the features of all (21) POSSUM protein descriptors
 
-    
-* or one of the 18 protein descriptors in iFeature.
+  * all_POSSUM: it extracts the features of all (21) POSSUM protein descriptors
+<br/>
+
+or one of the 18 protein descriptors in iFeature.
 
 * **iFeature descriptors:** AAC, PAAC, APAAC, DPC, GAAC, CKSAAP, CKSAAGP, GDPC, Moran, Geary,
 NMBroto, CTDC, CTDD, CTDT, CTriad, KSCTriad, SOCNumber, QSOrder, or all_iFeature
 
   * all_iFeature: it extracts the features of all (18) iFeature protein descriptors
-<br/><br/>
+<br/>
 
 **place_protein_id: {int}, (default = 1):** It indicates the place of protein id in fasta header.
 e.g. fasta header: >sp|O27002|....|....|...., seperate the header wrt. '|' then >sp is
