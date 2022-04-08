@@ -110,7 +110,8 @@ The content of the output files:
       the rest is extracted features of the protein sequence.
       
 ## Tables of the available protein descriptors
-<br/>Table 1: Protein descriptors obtained from the POSSUM tool.
+
+Table 1: Protein descriptors obtained from the POSSUM tool.
 
 | Descriptor group | Protein descriptor                                                                               | Number of dimensions
 ----------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------
