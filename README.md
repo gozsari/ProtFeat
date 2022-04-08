@@ -1,6 +1,6 @@
 <p align="center">
 <img width="800" height="100"  src="image/protFeat_banner.png">
--Operating system: ![Linux](https://svgshare.com/i/Zhy.svg)
+- Operating system: ![Linux](https://svgshare.com/i/Zhy.svg)
 
 ## Description: 
 
