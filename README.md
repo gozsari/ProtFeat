@@ -31,7 +31,40 @@ Conjoint triad| Conjoint triad (CTriad) <br/> Conjoint k-spaced triad (KSCTriad)
 Quasi-sequence-order| Sequence-order-coupling number (SOCNumber) <br/> Quasi-sequence-order descriptors (QSOrder)     | 60 <br/> 100 
 Pseudo-amino acid composition| Pseudo-amino acid composition (PAAC) <br/> Amphiphilic PAAC (APAAC)                                     | 50 <br/> 80 
 
+## Installation
 
+ProtFeat is a python package for feature extracting from protein sequences written in Python 3.9. ProtFeat was developed and tested in Ubuntu 20.04 LTS. Please make sure that you have **Anaconda** installed on  your computer and  run the below commands to install requirements. Dependencies are available in requirements.txt file.
+
+```
+conda create -n protFeat_env python=3.9
+conda activate protFeat_env
+```
+## Preparation to run ProtFeat
+
+* Clone the Git Repository.
+```
+git clone https://github.com/gozsari/protFeat
+```
+* In terminal or command line navigate into **protFeat** folder.
+```
+cd protFeat
+```
+* Install the requirements by the running the following command.
+```
+pip install -r requirements.txt
+```
+## How to run ProtFeat to extract the protein features 
+
+* Then run the following commands in the following order:
+```
+cd src
+python
+
+import protFeat
+from protFeat.feature_extracter import extract_protein_feature, usage
+usage()
+extract_protein_feature(protein_feature, place_protein_id, input_folder, fasta_file_name)
+```
 ## Explanation of Parameters
 Here, we explain about
 **protein_feature: {string}, (default = 'aac_pssm'):** one of the 21 PSMM-based protein descriptors in POSSUM.
@@ -63,31 +96,17 @@ in the zeroth position, protein id in the first(1) position.
 ## Input file 
 
 * It must be in fasta format
-* A sample is also given as **feature_extraction_module/input_files/sample.fasta**
-
-
-## Downloading Position Specific Scoring Matrices (PSSMs) (optional)
-Since extracting PSSMs takes time for POSSUM descriptors, this step is to accelerate 
-the feature extraction process. We strongly recommend you to download PSSMs, 
-if you have more than 100 proteins in your fasta file(s). 
-
-We have extracted PSSMs for 558,419 proteins available in UniProtKB / SwissProt database.
-When you run the module to extract the POSSUM features, an option will be given whether you 
-prefer to download PSSM file. If you choose **Y** (Yes), then, the program will automatically 
-download and copy the related PSSMs to **feature_extraction_module/pssm_files** folder.
-
-Each PSSM file in the folder is named as **proteinID.pssm**.
-
 
 ## Output file
 
 * The extracted feature files will be located under
-**feature_extraction_module/output_folder** 
+**feature_extraction_output** 
 folder with the name: **fasta_file_name_protein_feature.txt** (e.g. sample_AAC.txt)
 * The content of the output files: 
+  * The output file is *tab-seperated*.
   * Each row corresponds to the extracted features of the protein sequence
   * The first column of each row is protein id (in UniProtKB), 
-    the rest is extracted features of the protein sequence.
+      the rest is extracted features of the protein sequence.
 
 ## License
 
