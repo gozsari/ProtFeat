@@ -31,15 +31,15 @@ conda activate protFeat_env
 ```
 ## Preparation to run ProtFeat
 
-* Clone the Git Repository.
+Clone the Git Repository.
 ```
 git clone https://github.com/gozsari/ProtFeat
 ```
-* In terminal or command line navigate into **protFeat** folder.
+In terminal or command line navigate into **protFeat** folder.
 ```
 cd ProtFeat
 ```
-* Install the requirements by the running the following command.
+Install the requirements by the running the following command.
 ```
 pip install -r requirements.txt
 ```
