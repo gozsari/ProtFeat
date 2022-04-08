@@ -2,10 +2,10 @@ import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-requirements = ['requests==2.27.1', 'numpy==1.21.2', 'scikit-learn==1.0.1']
+requirements = ['wget==3.2', 'requests==2.27.1', 'numpy==1.21.2']
 setuptools.setup(
     name='protFeat',
-    version='1.0',
+    version='1.2',
     author='Gokhan Ozsari',
     author_email='gozsari@ceng.metu.edu.tr',
     description='Installation of Package',
