@@ -124,7 +124,7 @@ Combination of above descriptors| AADP-PSSSM <br/> AATP <br/> MEDP | 420 <br/> 4
 Table 2: Protein descriptors obtained from the iFeature tool.
 
 | Descriptor group | Protein descriptor| Number of dimensions
-----------------------------------------|-----------------------------------------------------------------------|-----------------------------
+-------------------|--------------------|--------------------
 Amino acid composition| Amino acid composition (AAC) <br/> Composition of k-spaced amino acid pairs (CKSAAP) <br/>Dipeptide composition (DPC)|20<br/>2400<br/>400
 Grouped amino acid composition | Grouped amino acid composition (GAAC) <br/> Composition of k-spaced amino acid group pairs (CKSAAGP) <br/> Grouped dipeptide composition (GDPC)| 5 <br/> 150 <br/> 25
 Autocorrelation| Moran (Moran) <br/> Geary (Geary) <br/> Normalized Moreau-Broto (NMBroto) | 240 <br/> 240 <br/> 240 
