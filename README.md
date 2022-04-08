@@ -100,6 +100,7 @@ pse_pssm, dp_pssm, pssm_ac, pssm_cc, aadp_pssm, aatp, medp , or all_POSSUM
  **all_POSSUM:** it extracts the features of all (21) POSSUM protein descriptors
 
 or one of the 18 protein descriptors in iFeature.
+
 **iFeature descriptors:** AAC, PAAC, APAAC, DPC, GAAC, CKSAAP, CKSAAGP, GDPC, Moran, Geary,
 NMBroto, CTDC, CTDD, CTDT, CTriad, KSCTriad, SOCNumber, QSOrder, or all_iFeature
 **all_iFeature:** it extracts the features of all (18) iFeature protein descriptors
