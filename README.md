@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ```
 ## How to run ProtFeat to extract the protein features 
 
-* Then run the following commands in the following order:
+* Run the following commands in the given order:
 ### To use as a python package:
 ```
 cd src
