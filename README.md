@@ -96,15 +96,14 @@ in the zeroth position, protein id in the first(1) position.
 
 
 ## Input file 
-
-* It must be in fasta format
+It must be in fasta format
 
 ## Output file
-
-* The extracted feature files will be located under
+The extracted feature files will be located under
 **feature_extraction_output** 
 folder with the name: **fasta_file_name_protein_feature.txt** (e.g. sample_AAC.txt)
-* The content of the output files: 
+
+The content of the output files: 
   * The output file is *tab-seperated*.
   * Each row corresponds to the extracted features of the protein sequence
   * The first column of each row is protein id (in UniProtKB), 
