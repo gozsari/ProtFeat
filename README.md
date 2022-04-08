@@ -1,5 +1,5 @@
 <p align="center">
-<img width="700" height="100"  src="image/protFeat_banner.png">
+<img width="400" height="100"  src="image/protFeat_banner.png">
 
 ## Description: 
 
