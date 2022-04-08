@@ -91,7 +91,7 @@ For example,
 python protFeat_command_line.py --pf AAC --ppid 1 --inpf input_folder --fname sample
 ```
 ## Explanation of Parameters
-Here, we explain about
+
 **protein_feature: {string}, (default = 'aac_pssm'):** one of the 21 PSMM-based protein descriptors in POSSUM.
 
 **POSSUM descriptors:** aac_pssm, d_fpssm, smoothed_pssm, ab_pssm, pssm_composition, rpm_pssm,
