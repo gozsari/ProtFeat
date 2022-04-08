@@ -165,3 +165,15 @@ def edit_extracted_features_iFeature(temp_output_file, output_file, place_protei
         fw.close()
     fp.close()
     os.remove(temp_output_file)
+
+def download_extract_iFeature_data():
+    import wget
+    from zipfile import ZipFile
+    remote_url = 'https://slpred.kansil.org/iFeature/data.zip'
+    local_file = '{}/iFeature/data.zip'.format(path_to_folder)
+    wget.download(remote_url, local_file)
+    # Create a ZipFile Object and load sample.zip in it
+    with ZipFile(local_file, 'r') as zipObj:
+        # Extract all the contents of zip file in current directory
+        zipObj.extractall('{}/iFeature/'.format(path_to_folder))
+        zipObj.close()

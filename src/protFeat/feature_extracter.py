@@ -141,7 +141,9 @@ class feature_extracter(object):
 
             
     def extract_iFeature_feature(self):
-
+        data_iFeature = '{}/iFeature/data'.format(path_to_folder)
+        if os.path.isdir(data_iFeature) == False:
+            download_extract_iFeature_data()
         list_desc = [self.protein_feature]
 
         if self.protein_feature == 'all_iFeature':
