@@ -100,7 +100,6 @@ python protFeat_command_line.py --pf AAC --ppid 1 --inpf input_folder --fname sa
 
 	all_POSSUM: it extracts the features of all (21) POSSUM protein descriptors
 
-	or one of the 18 protein descriptors in iFeature.
 
 	iFeature descriptors: AAC, PAAC, APAAC, DPC, GAAC, CKSAAP, CKSAAGP, GDPC, Moran, Geary,
 	NMBroto, CTDC, CTDD, CTDT, CTriad, KSCTriad, SOCNumber, QSOrder, or all_iFeature
