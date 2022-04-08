@@ -70,7 +70,7 @@ usage()
 extract_protein_feature(protein_feature, place_protein_id, input_folder, fasta_file_name)
 ```
 or altenatively you may run ProtFeat from the terminal as the following:
-### To use as ProtFeat from terminal:
+### To use ProtFeat from terminal:
 ```
 cd src
 python protFeat_command_line.py --pf protein_feature --ppid place_protein_id --inpf input_folder --fname fasta_file_name
