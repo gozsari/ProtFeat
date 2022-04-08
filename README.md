@@ -50,7 +50,7 @@ git clone https://github.com/gozsari/ProtFeat
 ```
 * In terminal or command line navigate into **protFeat** folder.
 ```
-cd protFeat
+cd ProtFeat
 ```
 * Install the requirements by the running the following command.
 ```
