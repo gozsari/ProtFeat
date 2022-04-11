@@ -29,25 +29,13 @@ ProtFeat is a python package for feature extracting from protein sequences writt
 conda create -n protFeat_env python=3.9
 conda activate protFeat_env
 ```
-## Preparation to run ProtFeat
 
-Clone the Git Repository.
-```
-git clone https://github.com/gozsari/ProtFeat
-```
-In terminal or command line navigate into **protFeat** folder.
-```
-cd ProtFeat
-```
-Install the requirements by the running the following command.
-```
-pip install -r requirements.txt
-```
 ## How to run ProtFeat to extract the protein features 
 Run the following commands in the given order:
 ### To use as a python package:
 ```
-cd src
+pip install protFeat
+
 python
 
 import protFeat
@@ -61,6 +49,18 @@ extract_protein_feature("AAC", 1, "input_folder", "sample")
 ```
 
 ### To use ProtFeat from terminal:
+Clone the Git Repository.
+```
+git clone https://github.com/gozsari/ProtFeat
+```
+In terminal or command line navigate into **protFeat** folder.
+```
+cd ProtFeat
+```
+Install the requirements by the running the following command.
+```
+pip install -r requirements.txt
+```
 Altenatively you may run ProtFeat from the terminal as the following:
 ```
 cd src

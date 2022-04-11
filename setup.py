@@ -1,7 +1,7 @@
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+    long_description_ = fh.read()
 requirements = ['wget==3.2', 'requests==2.27.1', 'numpy==1.21.2']
 setuptools.setup(
     name='protFeat',
@@ -9,7 +9,7 @@ setuptools.setup(
     author='Gokhan Ozsari',
     author_email='gozsari@ceng.metu.edu.tr',
     description='Installation of Package',
-    long_description="readme",
+    long_description=long_description_,
     long_description_content_type="text/markdown",
     url='https://github.com/gozsari/ProtFeat',
     project_urls = {
