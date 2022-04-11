@@ -32,7 +32,7 @@ conda activate protFeat_env
 
 ## How to run ProtFeat to extract the protein features 
 Run the following commands in the given order:
-### To use as a python package:
+### To use ProtFeat as a python package:
 ```
 pip install protFeat
 ```
