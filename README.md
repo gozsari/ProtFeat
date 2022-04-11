@@ -35,9 +35,9 @@ Run the following commands in the given order:
 ### To use as a python package:
 ```
 pip install protFeat
-
-python
-
+```
+Then, you may use protFeat as the following in python:
+```
 import protFeat
 from protFeat.feature_extracter import extract_protein_feature, usage
 usage()
