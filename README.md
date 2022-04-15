@@ -10,7 +10,7 @@
 
 ## Description: 
 
-ProtFeat is designed to extract the protein features by employing POSSUM and iFeature python-based tools. ProtFeat includes a total of 39 distinct protein feature extraction (protein descriptors) methods using 21 PSSM-based protein descriptors from POSSUM and 18 protein descriptors from iFeature.
+ProtFeat is designed to extract the protein features by employing POSSUM and iFeature python-based tools. ProtFeat includes a total of 39 distinct protein feature extraction methods (protein descriptors) using 21 PSSM-based protein descriptors from POSSUM and 18 protein descriptors from iFeature.
 
 [POSSUM](https://academic.oup.com/bioinformatics/article/33/17/2756/3813283) (Position-Specific Scoring matrix-based feature generator for machine learning),
 a versatile toolkit with an online web server that can generate 21 types of PSSM-based feature descriptors,
