@@ -2,7 +2,7 @@ import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description_ = fh.read()
-requirements = ['wget==3.2', 'requests==2.27.1', 'numpy==1.21.2']
+requirements = ['wget==3.2', 'requests==2.27.1', 'numpy']
 setuptools.setup(
     name='protFeat',
     version='1.0',
